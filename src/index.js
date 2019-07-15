@@ -1,11 +1,3 @@
-class Person{
-    constructor(name){
-        this.name = name
-    }
-    getName(){
-        return this.name
-    }
-}
-
-let p= new Person("qqq")
-alert(p.getName())
+import App from "./demo/app.js"
+let app = new App("app")
+app.inits

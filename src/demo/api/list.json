@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name":"《Python入門》",
+        "price":134
+    },
+    {
+        "id": 2,
+        "name":"《Python高級》",
+        "price":223
+    }
+]
