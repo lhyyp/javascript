@@ -1,6 +1,7 @@
 import $ from "jquery"
 import { GET_LIST } from "../config/index.js"
- 
+import createTtem from "./createItem.js"
+
 
 export default class List{
     constructor(app){
@@ -19,8 +20,9 @@ export default class List{
     }
    // 生成列表 
     initItemList(data){
-        data.map(item => {
-
+        data.forEach((itemData) => {
+            let item = createTtem(this, itemData)
+            item.init()
         })
     }
     // 渲染

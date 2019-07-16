@@ -6,12 +6,11 @@ class Cart{
         this.list.push(data)
     }
 
-    del(id){
-        this.list  =  this.list.map(item => {
-            if(item.id == id){
-                return false
+    del(data){
+        this.list.forEach((item, index) => {
+            if(item.id == data.id){
+                this.list.splice(index,1)
             }
-            return true
         })
     }
 
